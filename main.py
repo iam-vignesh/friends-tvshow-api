@@ -4,11 +4,14 @@ from pymongo import MongoClient
 from bson import ObjectId
 from fastapi.encoders import jsonable_encoder
 import random
+import os
+
+uri = os.getenv("MONGODB")
 
 
 
 app = FastAPI()
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient(uri)
 db = client['friends_episodes']
 collection = db['friends_episodes']
 
