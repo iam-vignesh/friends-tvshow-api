@@ -6,7 +6,7 @@ from fastapi.encoders import jsonable_encoder
 import random
 import os
 
-uri = os.getenv("MONGODB")
+uri = os.getenv("MONGODB_URI")
 
 
 
