@@ -8,8 +8,6 @@ import os
 
 uri = os.getenv("MONGODB_URI")
 
-
-
 app = FastAPI()
 client = MongoClient(uri)
 db = client['friends_episodes']
