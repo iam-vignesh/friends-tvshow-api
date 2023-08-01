@@ -1,2 +1,0 @@
-fastapi==0.100.1
-pymongo==4.4.1
