@@ -4,7 +4,6 @@ from pymongo import MongoClient
 from bson import ObjectId
 from fastapi.encoders import jsonable_encoder
 import random
-import os
 
 
 
